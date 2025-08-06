@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget</title>
+    <link rel="stylesheet" href="chat-widget.css">
+</head>
+<body>
+    <!-- Botão flutuante do chat -->
+    <div id="chatButton" class="chat-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="white"/>
+            <path d="M7 9H17V11H7V9ZM7 12H15V14H7V12Z" fill="white"/>
+        </svg>
+    </div>
+
+    <!-- Modal do chat -->
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-container">
+            <!-- Cabeçalho do chat -->
+            <div class="chat-header">
+                <div class="chat-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="white"/>
+                    </svg>
+                    <span>Chat de Atendimento</span>
+                </div>
+                <button id="chatClose" class="chat-close">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Área de mensagens -->
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Olá! Como posso ajudá-lo hoje?
+                    </div>
+                    <div class="message-time"></div>
+                </div>
+            </div>
+
+            <!-- Indicador de digitação -->
+            <div id="typingIndicator" class="typing-indicator" style="display: none;">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="typing-text">Digitando...</span>
+            </div>
+
+            <!-- Área de input -->
+            <div class="chat-input-area">
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Digite sua mensagem..." maxlength="500">
+                    <button id="chatSend" class="chat-send-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="chat-widget.js"></script>
+</body>
+</html>

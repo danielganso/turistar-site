@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turistar Viagens - Sua próxima aventura começa aqui</title>
+    <meta name="description" content="Turistar Viagens - Agência de turismo em Feira de Santana, BA. Pacotes personalizados, experiência única e suporte completo para suas viagens.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chat-widget.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <!-- Navegação Fixa -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="icon.png" alt="Turistar Viagens Logo" style="height: 40px; margin-right: 10px;">
+                <h2>Turistar Viagens</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li><a href="#localizacao" class="nav-link">Localização</a></li>
+                <li><a href="#" class="nav-link orcamento-btn" onclick="window.ChatWidget.open(); return false;">Orçamento</a></li>
+                <li><a href="politica-privacidade.html" class="nav-link">Política de Privacidade</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção 1: Sobre a Turistar -->
+    <section id="sobre" class="section hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>SUA PRÓXIMA VIAGEM COMEÇA AQUI</h1>
+                <div class="hero-description">
+                    <p>Na Turistar Viagens, transformamos sonhos em realidade através de experiências de viagem únicas e personalizadas. Somos uma agencia preocupada em te oferecer a melhor experiência, com cuidado, atenção e todo acompanhamento desde o momento da aquisição até o retorno de sua viagem!</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">🛡️</div>
+                        <h3>SEGURANÇA</h3>
+                        <p>Aqui, sua viagem começa com segurança e termina com boas memórias.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">✈️</div>
+                        <h3>EXPERIÊNCIA</h3>
+                        <p>Viagens únicas, criadas sob medida para o seu estilo.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🤝</div>
+                        <h3>SUPORTE</h3>
+                        <p>Suporte dedicado antes, durante e depois da sua viagem, afinal sua tranquilidade é a nossa prioridade</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">💰</div>
+                        <h3>PREÇO</h3>
+                        <p>Pacotes com preço justo, vantagens reais e zero dor de cabeça.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">💳</div>
+                        <h3>CONDIÇÕES DE PAGAMENTO</h3>
+                        <p>Pagamento em até 12x sem juros em cartão ou boleto, além de um desconto especial para compras à vista</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">👥</div>
+                        <h3>ATENDIMENTO</h3>
+                        <p>Atendimento dedicado e humanizado para tornar sua viagem perfeita.</p>
+                    </div>
+                </div>
+                <div class="credentials-section">
+                    <p class="credentials-text">Na Turistar Viagens, sua tranquilidade começa aqui!</p>
+                    <div class="credentials-images">
+                        <div class="credential-item">
+                            <h3 class="credential-title">CADASTUR</h3>
+                            <img src="cadastur.png" alt="Certificação CADASTUR" class="cadastur-image" onclick="openImageModal('cadastur.png')">
+                        </div>
+                    </div>
+                </div>
+                <a href="#contato" class="cta-button">NOSSOS CONTATOS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 2: Contato -->
+    <section id="contato" class="section contact-section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p class="section-subtitle">Estamos prontos para planejar sua próxima aventura</p>
+            
+            <div class="contact-grid">
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <h3>WHATSAPP</h3>
+                        <a href="https://wa.me/5575981823998" target="_blank" class="whatsapp-btn">
+                            <span class="whatsapp-icon">💬</span>
+                            WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <h3>TELEFONE</h3>
+                        <a href="tel:+5575981823998" class="phone-link">+55 75 98182-3998</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <h3>EMAIL</h3>
+                        <a href="mailto:cinthia@turistarviagens.com.br" class="email-link">cinthia@turistarviagens.com.br</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="Instagram.svg" alt="Instagram" class="instagram-icon">
+                        </div>
+                        <h3>INSTAGRAM</h3>
+                        <a href="https://instagram.com/turistarviagens_" target="_blank" class="social-link instagram">
+                            @turistarviagens_
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 3: Localização -->
+    <section id="localizacao" class="section location-section">
+        <div class="container">
+            <h2>LOCALIZAÇÃO</h2>
+            
+            <div class="location-content">
+                <div class="address-info">
+                    <div class="address-item">
+                        <div class="address-icon">📍</div>
+                        <div class="address-details">
+                            <h3>Endereço</h3>
+                            <p>Av. Nóide Cerqueira, 5544 - LOJA 14<br>
+                            Sim, Feira de Santana – BA<br>
+                            CEP: 44085-052</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hours-info">
+                        <div class="hours-icon">🕒</div>
+                        <div class="hours-details">
+                            <h3>Horário de Funcionamento</h3>
+                            <p><strong>SEG A SEXTA:</strong> 08:30 AS 12:30 - turno da tarde por horário marcado<br>
+                            <strong>SÁBADO:</strong> por horário marcado<br>
+                            <strong>DOMINGO:</strong> fechado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.8808620002787!2d-38.9235873!3d-12.2563408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf2c170d7a21f713%3A0x31fdaba441c93fb0!2sTuristar%20Viagens!5e0!3m2!1spt-BR!2sbr!4v1751934935497!5m2!1spt-BR!2sbr"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização da Turistar Viagens">
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/pyDaJs9RkhBDpwXZ9" target="_blank" class="map-link">
+                        Ver no Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Turistar Viagens</h3>
+                    <p>CNPJ: 38.461.835/0001-11</p>
+                    <p>Telefone: +55 75 98182-3998</p>
+                </div>
+                <div class="footer-links">
+                    <a href="politica-privacidade.html" class="footer-link">Política de Privacidade</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Turistar Viagens. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para expandir imagem -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+        <div class="image-modal-content">
+            <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Widget de Chat -->
+    <!-- Botão flutuante do chat -->
+    <div id="chatButton" class="chat-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="white"/>
+            <path d="M7 9H17V11H7V9ZM7 12H15V14H7V12Z" fill="white"/>
+        </svg>
+    </div>
+
+    <!-- Modal do chat -->
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-container">
+            <!-- Cabeçalho do chat -->
+            <div class="chat-header">
+                <div class="chat-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="white"/>
+                    </svg>
+                    <span>Chat de Atendimento</span>
+                </div>
+                <div class="chat-header-buttons">
+                    <button class="new-request-btn" aria-label="Nova solicitação" title="Iniciar nova conversa">Nova Solicitação</button>
+                    <button id="chatClose" class="chat-close">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Área de mensagens -->
+            <div id="chatMessages" class="chat-messages">
+            </div>
+
+            <!-- Indicador de digitação -->
+            <div id="typingIndicator" class="typing-indicator" style="display: none;">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="typing-text">Digitando...</span>
+            </div>
+
+            <!-- Área de input -->
+            <div class="chat-input-area">
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Digite sua mensagem..." maxlength="500">
+                    <button id="chatSend" class="chat-send-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="chat-widget.js"></script>
+</body>
+</html>
