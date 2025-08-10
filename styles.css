@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+/* Reset específico para botões */
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -99,25 +113,27 @@ body {
 }
 
 .solicitar-orcamento-btn {
-    background: #FFD700;
+    background: #FFD700 !important;
     color: #7b0707 !important;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 25px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
-    margin: 2rem 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    padding: 15px 30px !important;
+    border: none !important;
+    border-radius: 25px !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3) !important;
+    margin: 2rem 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    display: inline-block !important;
+    text-decoration: none !important;
 }
 
 .solicitar-orcamento-btn:hover {
-    background: #FFC107;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    background: #FFC107 !important;
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4) !important;
     color: #5a0505 !important;
 }
 
@@ -691,9 +707,9 @@ body {
     }
 
     .solicitar-orcamento-btn {
-        padding: 12px 25px;
-        font-size: 1rem;
-        margin: 1.5rem 0;
+        padding: 12px 25px !important;
+        font-size: 1rem !important;
+        margin: 1.5rem 0 !important;
     }
 
     .values-grid {
@@ -813,9 +829,9 @@ body {
     }
 
     .solicitar-orcamento-btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-        margin: 1rem 0;
+        padding: 10px 20px !important;
+        font-size: 0.9rem !important;
+        margin: 1rem 0 !important;
     }
 
     .hero-description p {
