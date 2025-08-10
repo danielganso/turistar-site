@@ -98,6 +98,29 @@ body {
     color: white !important;
 }
 
+.solicitar-orcamento-btn {
+    background: #FFD700;
+    color: #7b0707 !important;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    margin: 2rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.solicitar-orcamento-btn:hover {
+    background: #FFC107;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    color: #5a0505 !important;
+}
+
 .nav-link::after {
     content: '';
     position: absolute;
@@ -130,7 +153,7 @@ body {
 /* Seções */
 .section {
     min-height: 100vh;
-    padding: 100px 0 80px;
+    padding: 120px 0 80px;
     display: flex;
     align-items: center;
 }
@@ -667,6 +690,12 @@ body {
         font-size: 1.2rem;
     }
 
+    .solicitar-orcamento-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+    }
+
     .values-grid {
         grid-template-columns: 1fr;
     }
@@ -754,7 +783,7 @@ body {
     }
 
     .section {
-        padding: 80px 0 60px;
+        padding: 100px 0 60px;
     }
 
     .modal-content {
@@ -781,6 +810,12 @@ body {
     .hero-content h1 {
         font-size: 1.8rem;
         line-height: 1.1;
+    }
+
+    .solicitar-orcamento-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin: 1rem 0;
     }
 
     .hero-description p {
@@ -874,7 +909,7 @@ body {
     }
 
     .section {
-        padding: 60px 0 40px;
+        padding: 90px 0 40px;
     }
 }
 
@@ -919,7 +954,7 @@ body {
     }
 
     .section {
-        padding: 50px 0 30px;
+        padding: 80px 0 30px;
     }
 }
 
@@ -939,7 +974,7 @@ body {
 /* Modo escuro (opcional) */
 @media (prefers-color-scheme: dark) {
     .navbar {
-        background: rgba(30, 41, 59, 0.95);
+        background: rgba(255, 255, 255, 0.95);
     }
 
     .nav-link {
